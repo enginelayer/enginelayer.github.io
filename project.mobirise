@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "engine layer",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#1a0c6d"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/eigenlayer.png",
+    "usedWebp": true,
+    "imageResize": true,
+    "sitemapSwitcher": true,
+    "siteUrl": "https://enginelayer.github.io",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://enginelayer.github.io/sitemap.xml\n",
+    "mbrsiteDomain": "dpckeyp2n6",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "EigenLayer | Home Official Site",
+        "meta_descr": "Eigenlayer provides developers with access to the Ethereum staked capital base and decentralized validator set. Access to this trust network can make previously ...",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/app.eigenlayer.xyz-httpsapp.eigenlayer.xyz.png\" alt=\"engine layer \">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u5blC9mmWf",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#1a0c6d\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#1a0c6d\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Engine Layer: Empowering Decentralized Applications with Scalability and Efficiency</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">As decentralized applications (DApps) continue to gain popularity, scalability and efficiency have emerged as critical challenges. <a href=\"https://enginelayer.github.io\" class=\"text-primary\">Engine Layer</a>, a groundbreaking technology, aims to address these challenges by providing a scalable and efficient solution for DApps. In this article, we delve into the world of Engine Layer, exploring its features, benefits, and the impact it has on the development and performance of decentralized applications.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Understanding Engine Layer:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://app.eigenlayer.xyz/\" class=\"text-primary\">Engine Layer</a> is a technology designed to enhance the scalability and efficiency of decentralized applications. It serves as an intermediate layer between the application layer and the underlying blockchain network, enabling DApps to process transactions and execute smart contracts more efficiently. Engine Layer achieves this by implementing various techniques, such as off-chain computation, sharding, and state channel technology.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features and Functionalities:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Engine Layer offers several key features and functionalities that contribute to its effectiveness in improving DApp scalability and efficiency:<br><br>a. Off-chain Computation: Engine Layer leverages off-chain computation, enabling certain computations and operations to be performed outside the main blockchain network. This significantly reduces the computational burden on the blockchain, enhancing the overall scalability and throughput of DApps.<br><br>b. Sharding: Engine Layer implements sharding, a technique that divides the blockchain network into smaller partitions called shards. Each shard is responsible for processing a subset of transactions, allowing for parallel processing and increasing the overall capacity and speed of DApps.<br><br>c. State Channel Technology: Engine Layer utilizes state channel technology, which allows DApp users to conduct transactions off-chain while maintaining the security and integrity of the blockchain. This reduces transaction costs and latency, making DApps more efficient and user-friendly.<br><br>d. Interoperability: Engine Layer promotes interoperability between different blockchain networks, enabling seamless communication and interaction between DApps operating on different blockchains. This enhances the flexibility and usability of decentralized applications.<br><br>e. Developer-Friendly Tools: Engine Layer provides developers with a set of tools and infrastructure to simplify the development process of DApps. This includes software development kits (SDKs), application programming interfaces (APIs), and documentation that facilitate the integration of Engine Layer into DApp architectures.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of Engine Layer:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Engine Layer offers several notable benefits that contribute to its significance in the realm of decentralized applications:<br><br>a. Scalability: By implementing off-chain computation and sharding, Engine Layer significantly improves the scalability of DApps. It allows for parallel processing of transactions, increasing the capacity and throughput of the applications.<br><br>b. Efficiency: Engine Layer reduces the computational burden on the underlying blockchain network, resulting in faster transaction processing and lower fees. This enhances the overall efficiency of DApps, making them more practical and user-friendly.<br><br>c. Enhanced User Experience: With improved scalability and efficiency, Engine Layer enhances the user experience by reducing transaction confirmation times and minimizing network congestion. This results in a smoother and more responsive DApp experience for end-users.<br><br>d. Cost-Effectiveness: Engine Layer's off-chain computation and state channel technology reduce transaction costs associated with DApps. Users can enjoy lower fees, making decentralized applications more economically viable compared to traditional centralized alternatives.<br><br>e. Interoperability and Flexibility: Engine Layer's interoperability capabilities enable seamless interaction between different DApps and blockchain networks. This fosters collaboration, innovation, and the development of complex decentralized ecosystems.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Impact on DApp Development and Performance:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Engine Layer has a significant impact on the development and performance of decentralized applications:<br><br>a. Improved Development Experience: Engine Layer provides developers with powerful tools and infrastructure that simplify the development process. By abstracting complex blockchain operations and offering developer-friendly interfaces, Engine Layer reduces the learning curve and accelerates DApp development.<br><br>b. Increased Adoption: The scalability and efficiency enhancements offered by Engine Layer make DApps more accessible and user-friendly. This, in turn, can drive wider adoption of decentralized applications, attracting both developers and end-users to the ecosystem.<br><br>c. Expanded Use Cases: Engine Layer's scalability and efficiency improvements open up new possibilities for DApp use cases. Applications that require high transaction throughput, such as gaming, decentralized finance (DeFi), and supply chain management, can benefit greatly from Engine Layer's capabilities.<br><br>d. Network Sustainability: Engine Layer's ability to improve scalability and efficiency can contribute to the sustainability of blockchain networks. By alleviating network congestion and reducing resource consumption, Engine Layer helps ensure the long-term viability of decentralized systems.<br><br>e. Evolution of Blockchain Technology: Engine Layer represents an important step forward in the evolution of blockchain technology. Its innovations and optimizations pave the way for future advancements, pushing the boundaries of what is possible in decentralized application development.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Engine Layer plays a crucial role in addressing the scalability and efficiency challenges faced by decentralized applications. By implementing off-chain computation, sharding, and state channel technology, Engine Layer enhances the performance and usability of DApps, making them more scalable, cost-effective, and userfriendly. As the adoption of decentralized applications continues to grow, Engine Layer will play a vital role in shaping the future of blockchain technology, enabling the development of complex and scalable decentralized ecosystems.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u5blDyYN1q",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
